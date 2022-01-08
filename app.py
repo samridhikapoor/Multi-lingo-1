@@ -21,7 +21,7 @@ custom_config = r'--oem 3 --psm 6'
 #setting the correct path
 #for Windows find it in the Programmne files
 #This path is given for heroku dyno
-pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+pytesseract.pytesseract.tesseract_cmd = r'/app/.apt/usr/bin/tesseract'
 
 #homepage route
 @app.route("/", methods = ['POST', 'GET'])
